@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <link rel="StyleSheet" href="Styles/css.css">
+        <script  type="text/JavaScript" src="Script/js.js"></script>
+    </head>
+    <body>
+        <h1>Submit your application</h1>
+         <center>for<b>.NET Developer(Fresher)</b></center>
+        <br>
+        <br>
+        <p> <b>Personal Information</b></p>
+        <form >
+           <!-------------------------form filling process starts---------------------------------->
+            <label>Name as per ID proof<span class="star">*</span> <br>
+            <input id="name" type="text" placeholder="Name" onchange="namefunction()"  value size="40" height="5px">
+            <label id="lbuser" style="color: red;visibility: hidden;"> username name is required</label>
+            <br><span class="middle">Father's Name</span><span class="star">*</span></label><br>
+            <input type="text" placeholder="Father's Name" value size="40" id="father"onchange="fatherfunction()" >
+            <label id="lastname" style="color: red;visibility: hidden;">Lastname is Required</label>
+            <br>
+            <p>Email<span class="star">*</span><span class="middle">Date Of Birth</span><span class="star">*</span><span class="left">Mobile No:</span><span class="star">*</span></p>
+            <br>
+            <input type="text" value size="40" id="email">
+            <label id="emailid" style="color: red;visibility: hidden;"onchange="emailfunction()" > Email is Required</label>
+            <input type="text" placeholder="DD/MM/YYYY" value size="18" id="dob">
+            <label id="DOB" style="color: red;visibility: hidden;"onchange="DOBfunction()" >Required</label>
+            <input type="text" value size="18" id="num" min="10" max="10">
+            <label id="mobile" style="color: red;visibility: hidden;" onchange="numberfunction()" >Required</label>
+            <br>
+            <label>Current Adress<span class="star">*</span></label>
+            <br>
+            <input type="text"   id="add" value size="40">
+            <label id="address" style="color: red;visibility: hidden;"onchange="Adressfunction()" >  Address is Required</label>
+            <input type="text" placeholder="Address line 2"  value size="40">
+            
+            <br>
+            <br>
+            <input type="text" placeholder="City" id="city" value size="18">\
+            <label id="CITY" style="color: red;visibility: hidden;"onchange="cityfunction()" >city is required</label>
+            <select>
+                <option>TamilNadu</option>
+                <option>Kerela</option>
+                <option>Karanataka</option>
+                <option>Nepal</option>
+                <option>Delhi</option>
+            </select>
+            <input type="text" placeholder="Zip code" id="zip"value size="18">
+            <label id="pincode" style="color: red;visibility: hidden;"onchange="pincodefunction()" > Zipcode is required</label>
+            <br>
+            <label> Permanent Address<span class="star">*</span> <input onclick="check()" type="checkbox" id="check">Same as Current Address</label>
+            <br>
+            <input type="text" placeholder="Address line 1" id="add1" value size="40">
+            <label id="adress1" style="color: red;visibility: hidden;"onchange="permanentfunction()" >Address is Required</label>
+            <input type="text" placeholder="Address line 2"  value size="40"><br>
+            <input type="text" placeholder="City" id="city1"value size="18">
+            <label id="adress1" style="color: red;visibility: hidden;">city is Required</label>
+            <select>
+                <option>TamilNadu</option>
+                <option>Kerela</option>
+                <option>Karanataka</option>
+                <option>Nepal</option>
+                <option>Delhi</option>
+            </select>
+            <input type="text" placeholder="Zip code" id="zip2"value size="18">
+            <label id="PINCODE" style="color: red;visibility: hidden;"> zipcode is Required</label>
+            <br>
+            <br>
+            <p>Upload Profile Photo<span class="star">*</span> (JPG/PNG formart only)</p>
+            <p>Please upload a photo of yourself.Your face should be clear visible. Make sure the image size does not exceed 500KB</p>
+            <br>
+            <input type="file" placeholder="UPLOAD PHOTO" id="img"value size="18">
+            <label id="photo" style="color: red;visibility: hidden;" onchange="photofunction()" > invalid photo</label>
+            <br>
+            <button type="button" onclick=" validation()">submit</button>
+        </form>
+    </body>
+</html> 
